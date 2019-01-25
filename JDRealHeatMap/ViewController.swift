@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         ref.observe(.value, with: { snapshot in
             
             if snapshot.childrenCount > 0 {
-                self.testpointCoor.removeAll()
+                self.cattleBloatedLocations.removeAll()
                 for eachRecord in snapshot.children.allObjects as! [DataSnapshot] {
                     let cattleDetails = eachRecord.value as? NSDictionary
 //                    let numberOfCattleBloated = cattleDetails?["no_cattleBloated"]
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
 
                     for _ in 0..<numberOfCattleBloated
                     {
-                        self.testpointCoor.append(CLLocationCoordinate2D(latitude: lat, longitude: long))
+                        self.cattleBloatedLocations.append(CLLocationCoordinate2D(latitude: lat, longitude: long))
                         self.map?.setType(type: .RadiusBlurry)
                     }
 
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         {
             let loti:Double = Double(119) + Double(Float(arc4random()) / Float(UINT32_MAX))
             let lati:Double = Double(25 + arc4random_uniform(4)) + 2 * Double(Float(arc4random()) / Float(UINT32_MAX))
-            testpointCoor.append(CLLocationCoordinate2D(latitude: lati, longitude: loti))
+            cattleBloatedLocations.append(CLLocationCoordinate2D(latitude: lati, longitude: loti))
         }
     }
 }
@@ -100,7 +100,7 @@ extension ViewController:JDHeatMapDelegate
 {
     func heatmap(HeatPointCount heatmap:JDSwiftHeatMap) -> Int
     {
-        return testpointCoor.count
+        return cattleBloatedLocations.count
     }
     
     func heatmap(HeatLevelFor index:Int) -> Int
@@ -114,6 +114,6 @@ extension ViewController:JDHeatMapDelegate
     
     func heatmap(CoordinateFor index:Int) -> CLLocationCoordinate2D
     {
-        return testpointCoor[index]
+        return cattleBloatedLocations[index]
     }
 }

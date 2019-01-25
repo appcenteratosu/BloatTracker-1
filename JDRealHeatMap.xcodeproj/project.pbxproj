@@ -19,6 +19,9 @@
 		4FB9F0FD1F167047008F8215 /* JDOverlayRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB9F0F71F167047008F8215 /* JDOverlayRender.swift */; };
 		4FB9F0FE1F167047008F8215 /* JDRealHeatMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB9F0F81F167047008F8215 /* JDRealHeatMap.swift */; };
 		4FB9F0FF1F167047008F8215 /* JDRowDataProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB9F0F91F167047008F8215 /* JDRowDataProducer.swift */; };
+		A5B782F821F023D100BBAA27 /* Cattle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B782F721F023D100BBAA27 /* Cattle.swift */; };
+		A5B782FA21F7F2CD00BBAA27 /* Submit_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */; };
+		A5D990EE21F8589F002B60C1 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D990ED21F8589F002B60C1 /* TestViewController.swift */; };
 		ED8C32EB5DC9F5919A24BFE6 /* Pods_JDRealHeatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCE39C4E6BAC1F62F971D0 /* Pods_JDRealHeatMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 		4FB9F0F81F167047008F8215 /* JDRealHeatMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JDRealHeatMap.swift; path = JDSwiftHeatMap/JDRealHeatMap.swift; sourceTree = "<group>"; };
 		4FB9F0F91F167047008F8215 /* JDRowDataProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JDRowDataProducer.swift; path = JDSwiftHeatMap/JDRowDataProducer.swift; sourceTree = "<group>"; };
 		8660E992CA91FAF3E5C00FC0 /* Pods-JDRealHeatMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDRealHeatMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDRealHeatMap/Pods-JDRealHeatMap.debug.xcconfig"; sourceTree = "<group>"; };
+		A5B782F721F023D100BBAA27 /* Cattle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cattle.swift; sourceTree = "<group>"; };
+		A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submit_ViewController.swift; sourceTree = "<group>"; };
+		A5D990ED21F8589F002B60C1 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,10 @@
 				4F90C0FE1EEE6C69003706F3 /* JDRealHeatMap */,
 				4F90C0EA1EEE6A39003706F3 /* AppDelegate.swift */,
 				4F90C0EC1EEE6A39003706F3 /* ViewController.swift */,
+				A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */,
+				A5B782F721F023D100BBAA27 /* Cattle.swift */,
 				4F90C0EE1EEE6A39003706F3 /* Main.storyboard */,
+				A5D990ED21F8589F002B60C1 /* TestViewController.swift */,
 				4F90C0F11EEE6A39003706F3 /* Assets.xcassets */,
 				4F90C0F31EEE6A39003706F3 /* LaunchScreen.storyboard */,
 				184C98EA21EF0B800012E85F /* GoogleService-Info.plist */,
@@ -239,7 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B782FA21F7F2CD00BBAA27 /* Submit_ViewController.swift in Sources */,
 				4FB9F0FA1F167047008F8215 /* JDColorMixer.swift in Sources */,
+				A5D990EE21F8589F002B60C1 /* TestViewController.swift in Sources */,
+				A5B782F821F023D100BBAA27 /* Cattle.swift in Sources */,
 				4FB9F0FD1F167047008F8215 /* JDOverlayRender.swift in Sources */,
 				4F90C0ED1EEE6A39003706F3 /* ViewController.swift in Sources */,
 				4FB9F0FF1F167047008F8215 /* JDRowDataProducer.swift in Sources */,
