@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         //map = JDSwiftHeatMap(frame: mapsView.frame, delegate: self, maptype: .FlatDistinct, BasicColors: [UIColor.yellow,UIColor.red], devideLevel: 2)
         map?.delegate = self
         mapsView.addSubview(map!)
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,6 +92,8 @@ extension ViewController:MKMapViewDelegate
     func mapViewWillStartRenderingMap(_ mapView: MKMapView) {
         map?.heatmapViewWillStartRenderingMap(mapView)
     }
+    
+    
 }
 
 extension ViewController:JDHeatMapDelegate

@@ -74,12 +74,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-970" y="-766"/>
+            <point key="canvasLocation" x="-1142" y="-722"/>
         </scene>
-        <!--Test View Controller-->
+        <!--Submit View Controller-->
         <scene sceneID="BXQ-BE-7iC">
             <objects>
-                <viewController id="lqj-T9-EYj" customClass="TestViewController" customModule="JDRealHeatMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Submit_ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lqj-T9-EYj" customClass="Submit_ViewController" customModule="JDRealHeatMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ms0-i5-OKQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,7 +171,7 @@
                                                 </constraints>
                                                 <state key="normal" title="  Pasture Type"/>
                                                 <connections>
-                                                    <action selector="Pasture_Label_Pressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="jD2-u3-xYY"/>
+                                                    <action selector="pastureTypeButton:" destination="lqj-T9-EYj" eventType="touchUpInside" id="p5y-wo-QzQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmP-Wl-dQ1">
@@ -185,7 +185,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="Pasture_Type_Button:" destination="lqj-T9-EYj" eventType="touchUpInside" id="gla-bv-nzG"/>
+                                                    <action selector="pastureTypeButton:" destination="lqj-T9-EYj" eventType="touchUpInside" id="xt6-Ru-GUx"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-ET-xLX">
@@ -207,8 +207,8 @@
                                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                         </state>
                                                                         <connections>
-                                                                            <action selector="Submit_Button:" destination="lqj-T9-EYj" eventType="touchUpInside" id="kTI-cf-NHF"/>
-                                                                            <segue destination="BYZ-38-t0r" kind="show" identifier="SubmitToHeatMap" id="Wir-qC-EiG"/>
+                                                                            <action selector="submitButtonPressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="3Gd-X2-Xru"/>
+                                                                            <segue destination="BYZ-38-t0r" kind="show" identifier="SubmitToHeatMap" id="qdE-V1-I2F"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -235,9 +235,6 @@
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <state key="normal" title="ADD INFO" backgroundImage="submit-button-report-screen.png"/>
-                                                                        <connections>
-                                                                            <action selector="AddInfoButtonPressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="Tu5-gO-f0k"/>
-                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -290,9 +287,6 @@
                                                                             <constraint firstAttribute="height" constant="35" id="AoA-1w-ghF"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
-                                                                        <connections>
-                                                                            <action selector="FedHay_Button:" destination="lqj-T9-EYj" eventType="touchUpInside" id="7qq-Ap-jAf"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZv-4J-Awc">
                                                                         <rect key="frame" x="8" y="129" width="35" height="35"/>
@@ -301,9 +295,6 @@
                                                                             <constraint firstAttribute="width" constant="35" id="fBy-Vt-F9b"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
-                                                                        <connections>
-                                                                            <action selector="SupplementFed_Button:" destination="lqj-T9-EYj" eventType="touchUpInside" id="7Nr-SK-qvc"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fed Supplement?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvo-dI-T93">
                                                                         <rect key="frame" x="51" y="129" width="261" height="35"/>
@@ -321,9 +312,6 @@
                                                                             <constraint firstAttribute="height" constant="35" id="i9u-g9-xJB"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
-                                                                        <connections>
-                                                                            <action selector="FedPoloxalene_Button:" destination="lqj-T9-EYj" eventType="touchUpInside" id="M3k-j0-gX2"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fed Ionophores (Rumesin, Bovatec, etc)?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv8-Ci-8rh">
                                                                         <rect key="frame" x="51" y="215" width="261" height="35"/>
@@ -350,9 +338,6 @@
                                                                             <constraint firstAttribute="height" constant="35" id="CHS-0q-Obn"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
-                                                                        <connections>
-                                                                            <action selector="FedIonophores_Button:" destination="lqj-T9-EYj" eventType="touchUpInside" id="Tmh-f1-ypJ"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFN-MR-Yc1">
                                                                         <rect key="frame" x="8" y="258" width="35" height="35"/>
@@ -361,9 +346,6 @@
                                                                             <constraint firstAttribute="height" constant="35" id="Wk6-24-RZT"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
-                                                                        <connections>
-                                                                            <action selector="PastureFertilized_Button:" destination="lqj-T9-EYj" eventType="touchUpInside" id="dXe-Ig-x1A"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="was this pasture fertilized heavily?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbD-V8-OWn">
                                                                         <rect key="frame" x="51" y="258" width="261" height="35"/>
@@ -401,9 +383,6 @@
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                                         <state key="normal" title="SUBMIT" backgroundImage="submit-button-further-info-screen"/>
-                                                                        <connections>
-                                                                            <action selector="Submit_addInfo:" destination="lqj-T9-EYj" eventType="touchUpInside" id="wbY-rp-9eU"/>
-                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -595,22 +574,13 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="320" height="1100"/>
                     <connections>
-                        <outlet property="AddInfoView" destination="4jg-FF-hAr" id="fyL-rN-dJp"/>
-                        <outlet property="Pasture_Label_Selected" destination="goI-tu-e7m" id="bOc-5g-Kho"/>
-                        <outlet property="Pasture_type" destination="Jy6-UR-Zdd" id="ooA-hJ-tMm"/>
-                        <outlet property="Pasture_type_IBOutlet" destination="kmP-Wl-dQ1" id="lpP-Nd-0JH"/>
-                        <outlet property="SupplementFed" destination="FZv-4J-Awc" id="9Te-BG-gN8"/>
-                        <outlet property="addInfoStack" destination="zbl-h9-oZs" id="wzs-4M-Sob"/>
-                        <outlet property="blurView" destination="gtR-AT-zIy" id="aIN-rF-YYu"/>
+                        <outlet property="blurView" destination="gtR-AT-zIy" id="qgD-pG-HRW"/>
                         <outlet property="cattleBloated_TextField" destination="FWp-a2-DG5" id="6dk-FZ-1ay"/>
                         <outlet property="cattleDead_TextField" destination="1XY-9E-sfu" id="lIf-UH-BFK"/>
                         <outlet property="cattlePasture_TextField" destination="6Lh-mt-w3N" id="e1I-oU-NEd"/>
-                        <outlet property="fedHay" destination="Pmx-Fg-dTs" id="sbT-DX-liM"/>
-                        <outlet property="fedIonophores" destination="EmU-pz-uFk" id="r4G-XP-cgZ"/>
-                        <outlet property="fedPoloxalene" destination="pqA-Ec-ooI" id="DNY-qm-XCB"/>
-                        <outlet property="map_IBOutlet" destination="2QG-Cz-R81" id="KY1-RK-wSq"/>
-                        <outlet property="number_of_days" destination="wsU-o1-EJU" id="9w6-g6-Gpe"/>
-                        <outlet property="pastureFertilize" destination="IFN-MR-Yc1" id="vJM-JU-eeA"/>
+                        <outlet property="mapView" destination="2QG-Cz-R81" id="rf9-ch-LU2"/>
+                        <outlet property="pastureTypeLabel" destination="poH-vf-gQ5" id="fkW-yW-VOV"/>
+                        <outlet property="pastureTypePickerView" destination="Jy6-UR-Zdd" id="y27-PG-T3A"/>
                         <segue destination="CLU-C9-FL0" kind="unwind" identifier="UnwindFromReportToHome" unwindAction="unwindToHomeScreenWithSegue:" id="J9s-I4-ug2"/>
                     </connections>
                 </viewController>
@@ -618,12 +588,12 @@
                 <exit id="CLU-C9-FL0" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="1sS-34-ORc"/>
             </objects>
-            <point key="canvasLocation" x="-2050" y="-721"/>
+            <point key="canvasLocation" x="-1877" y="-722"/>
         </scene>
-        <!--Submit View Controller-->
+        <!--View Controller-->
         <scene sceneID="x8Q-5m-qr8">
             <objects>
-                <viewController id="Rev-yg-VY5" customClass="Submit_ViewController" customModule="JDRealHeatMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rev-yg-VY5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Lm-lS-SoF"/>
                         <viewControllerLayoutGuide type="bottom" id="TtY-wO-Yeh"/>
@@ -633,7 +603,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cos-Yn-LS4">
-                                <rect key="frame" x="159" y="506" width="56" height="30"/>
+                                <rect key="frame" x="159" y="440" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
@@ -654,13 +624,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cwH-qH-fSJ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPI-o2-Ns6">
+                                <rect key="frame" x="0.0" y="506" width="375" height="161"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="06I-GT-88e">
-                                <rect key="frame" x="139" y="402" width="97" height="30"/>
+                                <rect key="frame" x="139" y="383" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbp-cR-CgT">
+                                <rect key="frame" x="251" y="449" width="108" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -668,11 +653,14 @@
                         <outlet property="cattleBloated_TextField" destination="916-4U-8et" id="jSX-VA-Sev"/>
                         <outlet property="cattleDead_TextField" destination="Hcc-wD-q7Z" id="cRu-yG-dbF"/>
                         <outlet property="cattlePasture_TextField" destination="06I-GT-88e" id="yi7-bI-sbN"/>
+                        <outlet property="mapView" destination="cwH-qH-fSJ" id="JQj-f1-Q41"/>
+                        <outlet property="pastureTypeLabel" destination="nbp-cR-CgT" id="Wcb-NE-u83"/>
+                        <outlet property="pastureTypePickerView" destination="HPI-o2-Ns6" id="vW5-lq-l6U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rly-LB-7Bn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1745" y="351"/>
+            <point key="canvasLocation" x="-1796" y="264.01799100449779"/>
         </scene>
     </scenes>
     <resources>
