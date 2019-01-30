@@ -22,6 +22,14 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     @IBOutlet weak var pastureTypePickerView: UIPickerView!
     @IBOutlet weak var pastureTypeLabel: UILabel!
     @IBOutlet weak var blurView: UIView!
+    @IBOutlet weak var AddInfoView: UIView!
+    @IBOutlet weak var addInfoStack: UIStackView!
+    @IBOutlet weak var fedHay: UIButton!
+    @IBOutlet weak var SupplementFed: UIButton!
+    @IBOutlet weak var fedPoloxalene: UIButton!
+    @IBOutlet weak var fedIonophores: UIButton!
+    @IBOutlet weak var pastureFertilize: UIButton!
+    @IBOutlet weak var number_of_days: UITextField!
     
     var refCattle: DatabaseReference!
     let locationManager = CLLocationManager()
@@ -29,6 +37,11 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     var Longitude = ""
     var pickerData: [String] = [String]()
     var selectedPastureType: String = ""
+    var fedhay = String()
+    var fedSupplement = String()
+    var fedpoloxalene = String()
+    var fedlonophores = String()
+    var pasturefed = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,5 +126,74 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                       ]
         
         refCattle.child(key!).setValue(cattle)
+    }
+    
+    @IBAction func AddInfoButtonPressed(_ sender: Any) {
+        addInfoStack.isHidden = !addInfoStack.isHidden
+    }
+    
+    @IBAction func FedHayPressed(_ sender: UIButton) {
+        if sender.currentImage == UIImage(named: "unselected-bullet") {
+            sender.setImage(UIImage(named: "selected-bullet"), for: UIControl.State.normal)
+            fedhay = "YES"
+        } else {
+            sender.setImage(UIImage(named: "unselected-bullet"), for: UIControl.State.normal)
+            fedhay = "NO"
+        }
+    }
+    
+    @IBAction func SupplementFedPressed(_ sender: UIButton) {
+        if sender.currentImage == UIImage(named: "unselected-bullet") {
+            sender.setImage(UIImage(named: "selected-bullet"), for: UIControl.State.normal)
+            fedSupplement = "YES"
+        } else {
+            sender.setImage(UIImage(named: "unselected-bullet"), for: UIControl.State.normal)
+            fedSupplement = "NO"
+        }
+    }
+    
+    @IBAction func FedPoloxalenePressed(_ sender: UIButton) {
+        if sender.currentImage == UIImage(named: "unselected-bullet") {
+            sender.setImage(UIImage(named: "selected-bullet"), for: UIControl.State.normal)
+            fedpoloxalene = "YES"
+        } else {
+            sender.setImage(UIImage(named: "unselected-bullet"), for: UIControl.State.normal)
+            fedpoloxalene = "NO"
+        }
+    }
+    
+    @IBAction func FedIonophoresPressed(_ sender: UIButton) {
+        if sender.currentImage == UIImage(named: "unselected-bullet") {
+            sender.setImage(UIImage(named: "selected-bullet"), for: UIControl.State.normal)
+            fedlonophores = "YES"
+        } else {
+            sender.setImage(UIImage(named: "unselected-bullet"), for: UIControl.State.normal)
+            fedlonophores = "NO"
+        }
+    }
+    
+    @IBAction func PastureFertilizedPressed(_ sender: UIButton) {
+        if sender.currentImage == UIImage(named: "unselected-bullet") {
+            sender.setImage(UIImage(named: "selected-bullet"), for: UIControl.State.normal)
+            pasturefed = "YES"
+        } else {
+            sender.setImage(UIImage(named: "unselected-bullet"), for: UIControl.State.normal)
+            pasturefed = "NO"
+        }
+    }
+    
+    func additionalCattleInfo() {
+        let key = refCattle.childByAutoId().key
+        
+        let cattleAddInfo = ["id": key,
+                             "Fed_Hay": self.fedhay as String,
+                             "Fed_Supplement": self.fedSupplement as String,
+                             "Fed_Poloxalene": self.fedpoloxalene as String,
+                             "Fed_Ionophores": self.fedlonophores as String,
+                             "Pasture Fertilized heavily": self.pasturefed as String,
+                             "no_cattle_on_pasture": number_of_days.text
+            ] as [String : Any]
+        
+        refCattle.child(key!).setValue(cattleAddInfo)
     }
 }

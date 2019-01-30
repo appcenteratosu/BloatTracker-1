@@ -235,6 +235,9 @@
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <state key="normal" title="ADD INFO" backgroundImage="submit-button-report-screen.png"/>
+                                                                        <connections>
+                                                                            <action selector="AddInfoButtonPressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="UVo-6y-oyb"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -250,11 +253,11 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zbl-h9-oZs">
                                                         <rect key="frame" x="0.0" y="100" width="320" height="426"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jg-FF-hAr">
-                                                                <rect key="frame" x="0.0" y="0.0" width="320" height="426"/>
+                                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jg-FF-hAr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="424" height="0.0"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This information helps us make better predictions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krt-m6-eHu">
-                                                                        <rect key="frame" x="0.0" y="10" width="320" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="10" width="424" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="N19-PD-T7H"/>
                                                                         </constraints>
@@ -263,7 +266,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Were these cattle..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wp-pr-hoX">
-                                                                        <rect key="frame" x="0.0" y="48" width="320" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="48" width="424" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="cBt-X5-L6P"/>
                                                                         </constraints>
@@ -272,7 +275,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fed Hay?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtG-B0-ufu">
-                                                                        <rect key="frame" x="51" y="86" width="269" height="35"/>
+                                                                        <rect key="frame" x="51" y="86" width="373" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="0Tn-Z5-uH8"/>
                                                                         </constraints>
@@ -287,6 +290,9 @@
                                                                             <constraint firstAttribute="height" constant="35" id="AoA-1w-ghF"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
+                                                                        <connections>
+                                                                            <action selector="FedHayPressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="Lms-up-0UJ"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZv-4J-Awc">
                                                                         <rect key="frame" x="8" y="129" width="35" height="35"/>
@@ -295,9 +301,12 @@
                                                                             <constraint firstAttribute="width" constant="35" id="fBy-Vt-F9b"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
+                                                                        <connections>
+                                                                            <action selector="SupplementFedPressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="wZs-d0-gKt"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fed Supplement?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvo-dI-T93">
-                                                                        <rect key="frame" x="51" y="129" width="261" height="35"/>
+                                                                        <rect key="frame" x="51" y="129" width="365" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="HfO-BT-8er"/>
                                                                         </constraints>
@@ -312,9 +321,12 @@
                                                                             <constraint firstAttribute="height" constant="35" id="i9u-g9-xJB"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
+                                                                        <connections>
+                                                                            <action selector="FedPoloxalenePressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="3gQ-UF-gNg"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fed Ionophores (Rumesin, Bovatec, etc)?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv8-Ci-8rh">
-                                                                        <rect key="frame" x="51" y="215" width="261" height="35"/>
+                                                                        <rect key="frame" x="51" y="215" width="365" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="nPI-9U-y2i"/>
                                                                         </constraints>
@@ -323,7 +335,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fed Poloxalene?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5g-0O-q54">
-                                                                        <rect key="frame" x="51" y="172" width="269" height="35"/>
+                                                                        <rect key="frame" x="51" y="172" width="373" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="oi1-W1-8QE"/>
                                                                         </constraints>
@@ -338,6 +350,9 @@
                                                                             <constraint firstAttribute="height" constant="35" id="CHS-0q-Obn"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
+                                                                        <connections>
+                                                                            <action selector="FedIonophoresPressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="9Og-8R-1nc"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFN-MR-Yc1">
                                                                         <rect key="frame" x="8" y="258" width="35" height="35"/>
@@ -346,9 +361,12 @@
                                                                             <constraint firstAttribute="height" constant="35" id="Wk6-24-RZT"/>
                                                                         </constraints>
                                                                         <state key="normal" image="unselected-bullet"/>
+                                                                        <connections>
+                                                                            <action selector="PastureFertilizedPressed:" destination="lqj-T9-EYj" eventType="touchUpInside" id="Zjk-dp-2hF"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="was this pasture fertilized heavily?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbD-V8-OWn">
-                                                                        <rect key="frame" x="51" y="258" width="261" height="35"/>
+                                                                        <rect key="frame" x="51" y="258" width="365" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="M32-vq-x3x"/>
                                                                         </constraints>
@@ -357,7 +375,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many days have these cattle been on this pasture?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1V-F7-9o3">
-                                                                        <rect key="frame" x="0.0" y="301" width="255" height="45"/>
+                                                                        <rect key="frame" x="0.0" y="301" width="359" height="45"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="lM4-ws-l09"/>
                                                                         </constraints>
@@ -366,7 +384,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wsU-o1-EJU">
-                                                                        <rect key="frame" x="275" y="301" width="45" height="45"/>
+                                                                        <rect key="frame" x="379" y="301" width="45" height="45"/>
                                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="45" id="0bH-Nq-LYu"/>
@@ -377,7 +395,7 @@
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0I2-4z-1d1">
-                                                                        <rect key="frame" x="20" y="361" width="280" height="45"/>
+                                                                        <rect key="frame" x="20" y="361" width="384" height="45"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="lVf-WS-ifw"/>
                                                                         </constraints>
@@ -574,11 +592,19 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="320" height="1100"/>
                     <connections>
+                        <outlet property="AddInfoView" destination="4jg-FF-hAr" id="PSm-YW-hdi"/>
+                        <outlet property="SupplementFed" destination="FZv-4J-Awc" id="fhj-Rk-uTk"/>
+                        <outlet property="addInfoStack" destination="zbl-h9-oZs" id="zdY-uk-tqB"/>
                         <outlet property="blurView" destination="gtR-AT-zIy" id="qgD-pG-HRW"/>
                         <outlet property="cattleBloated_TextField" destination="FWp-a2-DG5" id="6dk-FZ-1ay"/>
                         <outlet property="cattleDead_TextField" destination="1XY-9E-sfu" id="lIf-UH-BFK"/>
                         <outlet property="cattlePasture_TextField" destination="6Lh-mt-w3N" id="e1I-oU-NEd"/>
+                        <outlet property="fedHay" destination="Pmx-Fg-dTs" id="rHH-nY-GlW"/>
+                        <outlet property="fedIonophores" destination="EmU-pz-uFk" id="jwb-PG-L1Q"/>
+                        <outlet property="fedPoloxalene" destination="pqA-Ec-ooI" id="sAU-Vi-uiB"/>
                         <outlet property="mapView" destination="2QG-Cz-R81" id="rf9-ch-LU2"/>
+                        <outlet property="number_of_days" destination="wsU-o1-EJU" id="Lsc-Zn-dgh"/>
+                        <outlet property="pastureFertilize" destination="IFN-MR-Yc1" id="yQY-yX-Zzq"/>
                         <outlet property="pastureTypeLabel" destination="poH-vf-gQ5" id="fkW-yW-VOV"/>
                         <outlet property="pastureTypePickerView" destination="Jy6-UR-Zdd" id="y27-PG-T3A"/>
                         <segue destination="CLU-C9-FL0" kind="unwind" identifier="UnwindFromReportToHome" unwindAction="unwindToHomeScreenWithSegue:" id="J9s-I4-ug2"/>
