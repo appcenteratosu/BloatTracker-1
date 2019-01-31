@@ -12,6 +12,8 @@ import FirebaseDatabase
 import MapKit
 import CoreLocation
 
+@available(iOS 10.0, *)
+@available(iOS 10.0, *)
 class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     // Declaration of UI objects.
@@ -180,6 +182,21 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
             sender.setImage(UIImage(named: "unselected-bullet"), for: UIControl.State.normal)
             pasturefed = "NO"
         }
+    }
+    
+    @available(iOS 10.0, *)
+    @IBAction func SubmitAddInfoPressed(_ sender: UIButton) {
+        additionalCattleInfo()
+        
+        let failAlert = UIAlertController(title: "Alert", message: "Futher Information is submitted", preferredStyle: UIAlertController.Style.alert)
+        self.present(failAlert, animated: true, completion: nil)
+        if #available(iOS 10.0, *) {
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { _ in failAlert.dismiss(animated: true, completion: nil)} )
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        addInfoStack.isHidden = true
     }
     
     func additionalCattleInfo() {

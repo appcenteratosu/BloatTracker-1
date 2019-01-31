@@ -21,7 +21,6 @@
 		A5B782F821F023D100BBAA27 /* Cattle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B782F721F023D100BBAA27 /* Cattle.swift */; };
 		A5B782FA21F7F2CD00BBAA27 /* Submit_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */; };
 		A5D8DBFC21FEAD45009C1EE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5D8DBFB21FEAD45009C1EE4 /* GoogleService-Info.plist */; };
-		A5D990EE21F8589F002B60C1 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D990ED21F8589F002B60C1 /* TestViewController.swift */; };
 		ED8C32EB5DC9F5919A24BFE6 /* Pods_JDRealHeatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCE39C4E6BAC1F62F971D0 /* Pods_JDRealHeatMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		A5B782F721F023D100BBAA27 /* Cattle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cattle.swift; sourceTree = "<group>"; };
 		A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submit_ViewController.swift; sourceTree = "<group>"; };
 		A5D8DBFB21FEAD45009C1EE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A5D990ED21F8589F002B60C1 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,6 @@
 				A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */,
 				A5B782F721F023D100BBAA27 /* Cattle.swift */,
 				4F90C0EE1EEE6A39003706F3 /* Main.storyboard */,
-				A5D990ED21F8589F002B60C1 /* TestViewController.swift */,
 				4F90C0F11EEE6A39003706F3 /* Assets.xcassets */,
 				4F90C0F31EEE6A39003706F3 /* LaunchScreen.storyboard */,
 				A5D8DBFB21FEAD45009C1EE4 /* GoogleService-Info.plist */,
@@ -250,7 +247,6 @@
 			files = (
 				A5B782FA21F7F2CD00BBAA27 /* Submit_ViewController.swift in Sources */,
 				4FB9F0FA1F167047008F8215 /* JDColorMixer.swift in Sources */,
-				A5D990EE21F8589F002B60C1 /* TestViewController.swift in Sources */,
 				A5B782F821F023D100BBAA27 /* Cattle.swift in Sources */,
 				4FB9F0FD1F167047008F8215 /* JDOverlayRender.swift in Sources */,
 				4F90C0ED1EEE6A39003706F3 /* ViewController.swift in Sources */,
