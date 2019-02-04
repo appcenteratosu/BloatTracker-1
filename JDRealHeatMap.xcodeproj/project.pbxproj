@@ -157,7 +157,7 @@
 				TargetAttributes = {
 					4F90C0E61EEE6A39003706F3 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 857SMZQ3R8;
+						DevelopmentTeam = F9Q487JGXU;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -378,11 +378,11 @@
 			baseConfigurationReference = 8660E992CA91FAF3E5C00FC0 /* Pods-JDRealHeatMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 857SMZQ3R8;
+				DEVELOPMENT_TEAM = F9Q487JGXU;
 				INFOPLIST_FILE = JDRealHeatMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jameskuo12345.JDRealHeatMap;
+				PRODUCT_BUNDLE_IDENTIFIER = Tejasree.vangapalli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -394,11 +394,11 @@
 			baseConfigurationReference = 0259FACB98FE20126D2B5936 /* Pods-JDRealHeatMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 857SMZQ3R8;
+				DEVELOPMENT_TEAM = F9Q487JGXU;
 				INFOPLIST_FILE = JDRealHeatMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jameskuo12345.JDRealHeatMap;
+				PRODUCT_BUNDLE_IDENTIFIER = Tejasree.vangapalli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
