@@ -70,9 +70,11 @@
                     </view>
                     <connections>
                         <outlet property="mapsView" destination="fK1-TY-3TW" id="q2s-3F-ZSE"/>
+                        <segue destination="476-ce-q21" kind="unwind" unwindAction="unwindToHomeScreenWithSegue:" id="7AT-gf-29Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="476-ce-q21" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1796" y="-722"/>
         </scene>
@@ -567,6 +569,9 @@
                                     <navigationItem title="Report a Bloat" id="vQZ-TR-WOg">
                                         <barButtonItem key="leftBarButtonItem" image="back-button" id="qkK-4p-JfX">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="BrX-UZ-4tk" kind="show" id="iKw-p6-ItP"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="menu-button" springLoaded="YES" id="q3G-2o-l6B">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
