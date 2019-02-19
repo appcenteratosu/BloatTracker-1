@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lqj-T9-EYj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BrX-UZ-4tk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -622,7 +622,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="MKx-se-gHN">
             <objects>
-                <tabBarController storyboardIdentifier="Tab_Bar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eTh-Rm-BK5" customClass="TabBar_ViewController" customModule="BloatTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Tab_Bar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eTh-Rm-BK5" customClass="TabBar_ViewController" customModule="JDRealHeatMap" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="YWI-OU-E8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -636,15 +636,155 @@
             </objects>
             <point key="canvasLocation" x="-526.875" y="-452.11267605633805"/>
         </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="XUM-g5-end">
+            <objects>
+                <viewController storyboardIdentifier="Home_Page_ViewController" automaticallyAdjustsScrollViewInsets="NO" id="BrX-UZ-4tk" customClass="Home_Page_ViewController" customModule="JDRealHeatMap" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bj0-q3-XIo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-image" translatesAutoresizingMaskIntoConstraints="NO" id="Yyd-av-sXq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" backIndicatorImage="menu-button" translatesAutoresizingMaskIntoConstraints="NO" id="whr-KK-42t">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.098039215690000001" green="0.58431372550000005" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="BloatTracker" id="nWP-5j-85A">
+                                        <barButtonItem key="rightBarButtonItem" image="menu-button" style="plain" id="jp4-h1-X6Q">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="BrX-UZ-4tk" id="lCw-ll-dbX"/>
+                                </connections>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BT-main-icon-white" highlightedImage="BT-icon-green" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-PP-1Pq">
+                                <rect key="frame" x="152.5" y="89" width="70" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="QS0-Mo-qnc"/>
+                                    <constraint firstAttribute="height" constant="134" id="nmz-U6-Lbm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report a number of bloats to our database" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lBU-Gv-AQ1">
+                                <rect key="frame" x="76" y="328" width="223" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lrL-ss-7Ul"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFM-Zg-g8C">
+                                <rect key="frame" x="152" y="248" width="71" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="YVv-Qm-98R"/>
+                                    <constraint firstAttribute="height" constant="71" id="i9v-ON-ajp"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="report-icon-title"/>
+                                <connections>
+                                    <segue destination="lqj-T9-EYj" kind="show" id="YEN-Jx-A5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-pD-vWD">
+                                <rect key="frame" x="36" y="371" width="71" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="BW9-Vo-pFq"/>
+                                    <constraint firstAttribute="width" constant="71" id="boZ-QF-Gw1"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="bmp-icon-title"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-ww-l4p">
+                                <rect key="frame" x="259" y="371" width="80" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="37A-7A-rTJ"/>
+                                    <constraint firstAttribute="height" constant="67" id="Gmp-Eo-K7k"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="data-icon-title"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="8dJ-XL-zgV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out some tips to help prevent bloat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="OsN-nf-k0b">
+                                <rect key="frame" x="5" y="447" width="142" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="HKR-Pg-X2I"/>
+                                    <constraint firstAttribute="width" constant="142" id="uma-GT-D3N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View our bloat data in the region" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mlu-rv-AkO">
+                                <rect key="frame" x="240" y="447" width="124" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="wKp-s8-mhE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.58431372550000005" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c8H-pD-vWD" firstAttribute="top" secondItem="lBU-Gv-AQ1" secondAttribute="bottom" constant="8" id="252-AV-fRU"/>
+                            <constraint firstItem="whr-KK-42t" firstAttribute="leading" secondItem="6VE-qs-9b0" secondAttribute="leading" id="3sq-mS-d0B"/>
+                            <constraint firstItem="yFM-Zg-g8C" firstAttribute="centerX" secondItem="6VE-qs-9b0" secondAttribute="centerX" id="6c3-Mc-GS8"/>
+                            <constraint firstItem="yFM-Zg-g8C" firstAttribute="top" secondItem="hnu-PP-1Pq" secondAttribute="bottom" constant="25" id="6iE-PP-2t9"/>
+                            <constraint firstItem="6VE-qs-9b0" firstAttribute="bottom" secondItem="Yyd-av-sXq" secondAttribute="bottom" id="8aL-rp-A11"/>
+                            <constraint firstItem="lBU-Gv-AQ1" firstAttribute="leading" secondItem="Bj0-q3-XIo" secondAttribute="leadingMargin" constant="60" id="A7A-yy-j43"/>
+                            <constraint firstItem="6VE-qs-9b0" firstAttribute="trailing" secondItem="Yyd-av-sXq" secondAttribute="trailing" id="Akn-GU-XOJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lBU-Gv-AQ1" secondAttribute="trailing" constant="60" id="Aso-pi-Sej"/>
+                            <constraint firstItem="hnu-PP-1Pq" firstAttribute="top" secondItem="whr-KK-42t" secondAttribute="bottom" constant="25" id="BBz-o8-icr"/>
+                            <constraint firstItem="OsN-nf-k0b" firstAttribute="top" secondItem="c8H-pD-vWD" secondAttribute="bottom" constant="9" id="I0P-R9-EER"/>
+                            <constraint firstItem="6VE-qs-9b0" firstAttribute="trailing" secondItem="whr-KK-42t" secondAttribute="trailing" id="K0F-K8-TOa"/>
+                            <constraint firstItem="OsN-nf-k0b" firstAttribute="leading" secondItem="6VE-qs-9b0" secondAttribute="leading" constant="5" id="KGJ-zs-2ro"/>
+                            <constraint firstItem="whr-KK-42t" firstAttribute="top" secondItem="6VE-qs-9b0" secondAttribute="top" id="Nig-Ii-itC"/>
+                            <constraint firstItem="c8H-pD-vWD" firstAttribute="leading" secondItem="Bj0-q3-XIo" secondAttribute="leadingMargin" constant="20" id="RcN-3f-ltg"/>
+                            <constraint firstItem="Mlu-rv-AkO" firstAttribute="trailing" secondItem="Bj0-q3-XIo" secondAttribute="trailingMargin" constant="5" id="StP-5c-JkK"/>
+                            <constraint firstItem="Yyd-av-sXq" firstAttribute="top" secondItem="6VE-qs-9b0" secondAttribute="top" id="Tjl-IW-5lK"/>
+                            <constraint firstItem="Mlu-rv-AkO" firstAttribute="top" secondItem="hqy-ww-l4p" secondAttribute="bottom" constant="9" id="ajJ-SO-Lql"/>
+                            <constraint firstItem="hqy-ww-l4p" firstAttribute="top" secondItem="lBU-Gv-AQ1" secondAttribute="bottom" constant="8" id="dHs-vs-351"/>
+                            <constraint firstItem="lBU-Gv-AQ1" firstAttribute="top" secondItem="yFM-Zg-g8C" secondAttribute="bottom" constant="9" id="k19-ay-SM0"/>
+                            <constraint firstItem="Yyd-av-sXq" firstAttribute="leading" secondItem="6VE-qs-9b0" secondAttribute="leading" id="p7c-2x-72T"/>
+                            <constraint firstItem="hnu-PP-1Pq" firstAttribute="centerX" secondItem="6VE-qs-9b0" secondAttribute="centerX" id="qih-5a-noU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hqy-ww-l4p" secondAttribute="trailing" constant="20" id="w4r-vB-td8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6VE-qs-9b0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="home-button" selectedImage="home-button" id="zbB-yL-7DP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="blurView" destination="Yyd-av-sXq" id="4QM-Mi-aey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCY-8k-m6I" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3438" y="-723"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BG-image" width="376" height="668"/>
-        <image name="Report-with-label" width="25" height="35"/>
-        <image name="back-button" width="13" height="21"/>
-        <image name="dd-options-arrow" width="11" height="6"/>
-        <image name="menu-button" width="23" height="19"/>
+        <image name="BT-icon-green" width="37.5" height="81"/>
+        <image name="BT-main-icon-white" width="48" height="103"/>
+        <image name="Report-with-label" width="25.5" height="35.5"/>
+        <image name="back-button" width="13.5" height="21.5"/>
+        <image name="bmp-icon-title" width="51" height="67.5"/>
+        <image name="data-icon-title" width="95.5" height="67"/>
+        <image name="dd-options-arrow" width="11" height="6.5"/>
+        <image name="home-button" width="27" height="33.5"/>
+        <image name="menu-button" width="23.5" height="19.5"/>
+        <image name="report-icon-title" width="61.5" height="71"/>
         <image name="submit-button-further-info-screen" width="282" height="36"/>
         <image name="submit-button-report-screen.png" width="16" height="16"/>
         <image name="unselected-bullet" width="22" height="22"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="IgB-Zl-irh"/>
+    </inferredMetricsTieBreakers>
 </document>
