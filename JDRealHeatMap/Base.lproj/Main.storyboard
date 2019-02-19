@@ -32,6 +32,9 @@
                                     <navigationItem title="Title" id="s9p-ks-AND">
                                         <barButtonItem key="leftBarButtonItem" image="back-button" id="g6h-AZ-urd">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="BrX-UZ-4tk" kind="show" id="gDC-v0-dXe"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -807,6 +810,7 @@
         <image name="unselected-bullet" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="gDC-v0-dXe"/>
         <segue reference="IgB-Zl-irh"/>
     </inferredMetricsTieBreakers>
 </document>
