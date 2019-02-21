@@ -5,12 +5,40 @@ import MapKit
 import FirebaseDatabase
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var NumberOfDays: UIButton!
+    @IBOutlet weak var NumberOfDaysArrow: UIButton!
+    
+    @IBOutlet weak var oneMonth: UIButton!
+    @IBOutlet weak var twoMonth: UIButton!
+    @IBOutlet weak var threeMonth: UIButton!
+    
+    @IBOutlet weak var dropDownStack: UIStackView!
 
     // Declaration of objects
     @IBOutlet weak var mapsView: UIView!
     var map:JDSwiftHeatMap?
     var ref: DatabaseReference!
     var cattleBloatedLocations = [CLLocationCoordinate2D(latitude: 37.78, longitude: -122.0),CLLocationCoordinate2D(latitude: 37.8, longitude: -122.0)]
+    
+    @IBAction func DaysDropDownTouched(_ sender: UIButton) {
+        dropDownStack.isHidden = !dropDownStack.isHidden
+    }
+    
+    @IBAction func Past1MonthClicked(_ sender: UIButton) {
+        NumberOfDays.setTitle(sender.currentTitle, for: UIControl.State.normal)
+        dropDownStack.isHidden = !dropDownStack.isHidden
+    }
+    
+    @IBAction func Past2MonthsClicked(_ sender: UIButton) {
+        NumberOfDays.setTitle(sender.currentTitle, for: UIControl.State.normal)
+        dropDownStack.isHidden = !dropDownStack.isHidden
+    }
+    
+    @IBAction func Past3MonthsClicked(_ sender: UIButton) {
+        NumberOfDays.setTitle(sender.currentTitle, for: UIControl.State.normal)
+        dropDownStack.isHidden = !dropDownStack.isHidden
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
