@@ -33,7 +33,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="back-button" id="g6h-AZ-urd">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <segue destination="BrX-UZ-4tk" kind="show" id="gDC-v0-dXe"/>
+                                                <segue destination="eTh-Rm-BK5" kind="show" id="sYI-yN-LSS"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -673,7 +673,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="back-button" id="qkK-4p-JfX">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="BrX-UZ-4tk" kind="show" id="iKw-p6-ItP"/>
+                                                <segue destination="eTh-Rm-BK5" kind="show" id="hnl-am-kIt"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="menu-button" springLoaded="YES" id="q3G-2o-l6B">
@@ -898,7 +898,7 @@
         <image name="unselected-bullet" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gDC-v0-dXe"/>
+        <segue reference="sYI-yN-LSS"/>
         <segue reference="YEN-Jx-A5d"/>
         <segue reference="IgB-Zl-irh"/>
     </inferredMetricsTieBreakers>
