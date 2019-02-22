@@ -24,7 +24,5 @@ class Home_Page_ViewController: UIViewController, UITabBarDelegate ,UITabBarCont
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
-        
-    }
+    
 }
