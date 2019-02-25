@@ -22,6 +22,13 @@
 		A5B782FA21F7F2CD00BBAA27 /* Submit_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */; };
 		A5CC2C5D221BC95500BD51DD /* Home_Page_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C5C221BC95500BD51DD /* Home_Page_ViewController.swift */; };
 		A5CC2C61221F755F00BD51DD /* TabBar_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C60221F755F00BD51DD /* TabBar_ViewController.swift */; };
+		A5CC2C63222369CC00BD51DD /* BMP_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C62222369CC00BD51DD /* BMP_ViewController.swift */; };
+		A5CC2C65222381E300BD51DD /* Setting_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C64222381E300BD51DD /* Setting_ViewController.swift */; };
+		A5CC2C672223BDC300BD51DD /* ManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C662223BDC300BD51DD /* ManageAccountViewController.swift */; };
+		A5CC2C692223C24C00BD51DD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C682223C24C00BD51DD /* LoginViewController.swift */; };
+		A5CC2C6B2223C2F000BD51DD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C6A2223C2F000BD51DD /* NavigationViewController.swift */; };
+		A5CC2C6D2223C35400BD51DD /* SignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C6C2223C35400BD51DD /* SignUPViewController.swift */; };
+		A5CC2C6F22246F7500BD51DD /* UserAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC2C6E22246F7500BD51DD /* UserAgreementViewController.swift */; };
 		A5D8DBFC21FEAD45009C1EE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5D8DBFB21FEAD45009C1EE4 /* GoogleService-Info.plist */; };
 		ED8C32EB5DC9F5919A24BFE6 /* Pods_JDRealHeatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDCE39C4E6BAC1F62F971D0 /* Pods_JDRealHeatMap.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +54,13 @@
 		A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submit_ViewController.swift; sourceTree = "<group>"; };
 		A5CC2C5C221BC95500BD51DD /* Home_Page_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_Page_ViewController.swift; sourceTree = "<group>"; };
 		A5CC2C60221F755F00BD51DD /* TabBar_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar_ViewController.swift; sourceTree = "<group>"; };
+		A5CC2C62222369CC00BD51DD /* BMP_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMP_ViewController.swift; sourceTree = "<group>"; };
+		A5CC2C64222381E300BD51DD /* Setting_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting_ViewController.swift; sourceTree = "<group>"; };
+		A5CC2C662223BDC300BD51DD /* ManageAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountViewController.swift; sourceTree = "<group>"; };
+		A5CC2C682223C24C00BD51DD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A5CC2C6A2223C2F000BD51DD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		A5CC2C6C2223C35400BD51DD /* SignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController.swift; sourceTree = "<group>"; };
+		A5CC2C6E22246F7500BD51DD /* UserAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementViewController.swift; sourceTree = "<group>"; };
 		A5D8DBFB21FEAD45009C1EE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,12 +97,19 @@
 		4F90C0E91EEE6A39003706F3 /* JDRealHeatMap */ = {
 			isa = PBXGroup;
 			children = (
+				A5CC2C6E22246F7500BD51DD /* UserAgreementViewController.swift */,
+				A5CC2C682223C24C00BD51DD /* LoginViewController.swift */,
 				4F90C0FE1EEE6C69003706F3 /* JDRealHeatMap */,
 				4F90C0EA1EEE6A39003706F3 /* AppDelegate.swift */,
 				4F90C0EC1EEE6A39003706F3 /* ViewController.swift */,
 				A5B782F921F7F2CD00BBAA27 /* Submit_ViewController.swift */,
 				A5B782F721F023D100BBAA27 /* Cattle.swift */,
 				4F90C0EE1EEE6A39003706F3 /* Main.storyboard */,
+				A5CC2C6C2223C35400BD51DD /* SignUPViewController.swift */,
+				A5CC2C6A2223C2F000BD51DD /* NavigationViewController.swift */,
+				A5CC2C662223BDC300BD51DD /* ManageAccountViewController.swift */,
+				A5CC2C64222381E300BD51DD /* Setting_ViewController.swift */,
+				A5CC2C62222369CC00BD51DD /* BMP_ViewController.swift */,
 				A5CC2C60221F755F00BD51DD /* TabBar_ViewController.swift */,
 				A5CC2C5C221BC95500BD51DD /* Home_Page_ViewController.swift */,
 				4F90C0F11EEE6A39003706F3 /* Assets.xcassets */,
@@ -254,12 +275,19 @@
 				A5B782FA21F7F2CD00BBAA27 /* Submit_ViewController.swift in Sources */,
 				4FB9F0FA1F167047008F8215 /* JDColorMixer.swift in Sources */,
 				A5B782F821F023D100BBAA27 /* Cattle.swift in Sources */,
+				A5CC2C6B2223C2F000BD51DD /* NavigationViewController.swift in Sources */,
+				A5CC2C65222381E300BD51DD /* Setting_ViewController.swift in Sources */,
+				A5CC2C6F22246F7500BD51DD /* UserAgreementViewController.swift in Sources */,
 				4FB9F0FD1F167047008F8215 /* JDOverlayRender.swift in Sources */,
 				4F90C0ED1EEE6A39003706F3 /* ViewController.swift in Sources */,
 				4FB9F0FF1F167047008F8215 /* JDRowDataProducer.swift in Sources */,
+				A5CC2C63222369CC00BD51DD /* BMP_ViewController.swift in Sources */,
 				4F90C0EB1EEE6A39003706F3 /* AppDelegate.swift in Sources */,
+				A5CC2C6D2223C35400BD51DD /* SignUPViewController.swift in Sources */,
 				4FB9F0FB1F167047008F8215 /* JDHMMissionController.swift in Sources */,
 				A5CC2C61221F755F00BD51DD /* TabBar_ViewController.swift in Sources */,
+				A5CC2C672223BDC300BD51DD /* ManageAccountViewController.swift in Sources */,
+				A5CC2C692223C24C00BD51DD /* LoginViewController.swift in Sources */,
 				4FB9F0FC1F167047008F8215 /* JDOverlay.swift in Sources */,
 				A5CC2C5D221BC95500BD51DD /* Home_Page_ViewController.swift in Sources */,
 				4FB9F0FE1F167047008F8215 /* JDRealHeatMap.swift in Sources */,
