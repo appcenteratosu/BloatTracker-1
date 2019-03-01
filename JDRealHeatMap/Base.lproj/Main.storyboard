@@ -168,6 +168,7 @@
                     <tabBarItem key="tabBarItem" title="" image="bloat-data-button" selectedImage="bloat-data-button" id="SVD-bO-rr2">
                         <color key="badgeColor" red="0.55294117649999996" green="0.76862745099999996" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="NumberOfDays" destination="yn8-zR-dUF" id="v5y-CX-Gch"/>
                         <outlet property="NumberOfDaysArrow" destination="dky-2k-Yu2" id="P3J-Nb-Xjb"/>
@@ -702,8 +703,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tE5-z0-Yq3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Report-with-label" largeContentSizeImage="Report-with-label" selectedImage="Report-with-label" id="l1M-rf-EIf">
-                        <color key="badgeColor" red="0.098039215690000001" green="0.58431372550000005" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <tabBarItem key="tabBarItem" title="" image="green-report" selectedImage="green-report" id="l1M-rf-EIf">
+                        <color key="badgeColor" red="0.55294117649999996" green="0.76862745099999996" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="gW7-NV-xeU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -809,35 +810,35 @@
                                     <constraint firstAttribute="width" constant="71" id="YVv-Qm-98R"/>
                                     <constraint firstAttribute="height" constant="71" id="i9v-ON-ajp"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="report-icon-title"/>
+                                <state key="normal" backgroundImage="report-button-big-white"/>
                                 <connections>
                                     <segue destination="lqj-T9-EYj" kind="show" id="YEN-Jx-A5d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-pD-vWD">
-                                <rect key="frame" x="36" y="371" width="71" height="67"/>
+                                <rect key="frame" x="36" y="371" width="71" height="71"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="BW9-Vo-pFq"/>
+                                    <constraint firstAttribute="height" constant="71" id="BW9-Vo-pFq"/>
                                     <constraint firstAttribute="width" constant="71" id="boZ-QF-Gw1"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="bmp-icon-title"/>
+                                <state key="normal" backgroundImage="bmps-button-big-white"/>
                                 <connections>
                                     <segue destination="GrY-iL-qH1" kind="show" id="xJN-NH-xJp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqy-ww-l4p">
-                                <rect key="frame" x="259" y="371" width="80" height="67"/>
+                                <rect key="frame" x="268" y="371" width="71" height="71"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="37A-7A-rTJ"/>
-                                    <constraint firstAttribute="height" constant="67" id="Gmp-Eo-K7k"/>
+                                    <constraint firstAttribute="width" constant="71" id="37A-7A-rTJ"/>
+                                    <constraint firstAttribute="height" constant="71" id="Gmp-Eo-K7k"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="data-icon-title"/>
+                                <state key="normal" backgroundImage="bloat-data-big-white"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="8dJ-XL-zgV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out some tips to help prevent bloat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="OsN-nf-k0b">
-                                <rect key="frame" x="5" y="447" width="142" height="35"/>
+                                <rect key="frame" x="5" y="451" width="142" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="HKR-Pg-X2I"/>
                                     <constraint firstAttribute="width" constant="142" id="uma-GT-D3N"/>
@@ -847,7 +848,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View our bloat data in the region" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mlu-rv-AkO">
-                                <rect key="frame" x="240" y="447" width="124" height="31.5"/>
+                                <rect key="frame" x="240" y="451" width="124" height="31.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="wKp-s8-mhE"/>
                                 </constraints>
@@ -883,7 +884,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6VE-qs-9b0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="home-button" selectedImage="home-button" id="zbB-yL-7DP"/>
+                    <tabBarItem key="tabBarItem" title="" image="home-button" selectedImage="home-button" id="zbB-yL-7DP">
+                        <color key="badgeColor" red="0.55294117649999996" green="0.76862745099999996" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="blurView" destination="Yyd-av-sXq" id="4QM-Mi-aey"/>
@@ -1870,21 +1873,21 @@
         <image name="BG-image" width="376" height="668"/>
         <image name="BT-icon-green" width="37.5" height="81"/>
         <image name="BT-main-icon-white" width="48" height="103"/>
-        <image name="Report-with-label" width="25.5" height="35.5"/>
         <image name="back-button" width="13.5" height="21.5"/>
         <image name="bg-login" width="376" height="669.5"/>
-        <image name="bloat-data-button" width="48.5" height="34.5"/>
+        <image name="bloat-data-big-white" width="48" height="47.5"/>
+        <image name="bloat-data-button" width="33.5" height="24"/>
         <image name="bmp-icon" width="62" height="62"/>
-        <image name="bmp-icon-title" width="51" height="67.5"/>
-        <image name="bmps-button" width="26" height="34.5"/>
-        <image name="data-icon-title" width="95.5" height="67"/>
+        <image name="bmps-button" width="26" height="25"/>
+        <image name="bmps-button-big-white" width="49.5" height="47"/>
         <image name="dd-options-arrow" width="11" height="6.5"/>
         <image name="emptycheckbox" width="626" height="626"/>
+        <image name="green-report" width="23.5" height="23.5"/>
         <image name="greenExternalIcon" width="347" height="347"/>
-        <image name="home-button" width="27" height="33.5"/>
+        <image name="home-button" width="27" height="25"/>
         <image name="menu-button" width="23.5" height="19.5"/>
         <image name="more-arrow-green" width="7" height="12.5"/>
-        <image name="report-icon-title" width="61.5" height="71"/>
+        <image name="report-button-big-white" width="52.5" height="50"/>
         <image name="settings-icon" width="62" height="62"/>
         <image name="submit-button-further-info-screen" width="282" height="36"/>
         <image name="submit-button-report-screen.png" width="16" height="16"/>
@@ -1894,9 +1897,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="Vux-Zp-kob"/>
         <segue reference="BM2-lw-zv8"/>
-        <segue reference="YtF-v3-GQR"/>
-        <segue reference="vhc-2k-f0z"/>
-        <segue reference="gTB-LZ-g28"/>
-        <segue reference="Zsb-Jx-Ups"/>
+        <segue reference="xJN-NH-xJp"/>
+        <segue reference="hnl-am-kIt"/>
+        <segue reference="YEN-Jx-A5d"/>
+        <segue reference="8dJ-XL-zgV"/>
     </inferredMetricsTieBreakers>
 </document>
