@@ -14,7 +14,7 @@ import CoreLocation
 
 @available(iOS 10.0, *)
 @available(iOS 10.0, *)
-class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     // Declaration of UI objects.
     @IBOutlet weak var cattleBloated_TextField: UITextField!
@@ -50,6 +50,11 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         refCattle = Database.database().reference().child("details");
         
         mapView.delegate = self
+        self.cattleBloated_TextField.delegate = self as! UITextFieldDelegate
+        self.cattlePasture_TextField.delegate = self as! UITextFieldDelegate
+        self.cattleDead_TextField.delegate = self as! UITextFieldDelegate
+        self.number_of_days.delegate = self as! UITextFieldDelegate
+        
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
@@ -127,6 +132,17 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                       "Longitude": Longitude as String
                       ]
         
+        let cattleAddInfo = ["id": key,
+                             "Fed_Hay": self.fedhay as String,
+                             "Fed_Supplement": self.fedSupplement as String,
+                             "Fed_Poloxalene": self.fedpoloxalene as String,
+                             "Fed_Ionophores": self.fedlonophores as String,
+                             "Pasture Fertilized heavily": self.pasturefed as String,
+                             "no_cattle_on_pasture": number_of_days.text
+            ] as [String : Any]
+        
+        refCattle.child(key!).setValue(cattleAddInfo)
+        
         refCattle.child(key!).setValue(cattle)
     }
     
@@ -184,33 +200,42 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         }
     }
     
-    @available(iOS 10.0, *)
-    @IBAction func SubmitAddInfoPressed(_ sender: UIButton) {
-        additionalCattleInfo()
-        
-        let failAlert = UIAlertController(title: "Alert", message: "Futher Information is submitted", preferredStyle: UIAlertController.Style.alert)
-        self.present(failAlert, animated: true, completion: nil)
-        if #available(iOS 10.0, *) {
-            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { _ in failAlert.dismiss(animated: true, completion: nil)} )
-        } else {
-            // Fallback on earlier versions
-        }
-        
-        addInfoStack.isHidden = true
+//    @available(iOS 10.0, *)
+//    @IBAction func SubmitAddInfoPressed(_ sender: UIButton) {
+//        additionalCattleInfo()
+//
+//        let failAlert = UIAlertController(title: "Alert", message: "Futher Information is submitted", preferredStyle: UIAlertController.Style.alert)
+//        self.present(failAlert, animated: true, completion: nil)
+//        if #available(iOS 10.0, *) {
+//            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { _ in failAlert.dismiss(animated: true, completion: nil)} )
+//        } else {
+//            // Fallback on earlier versions
+//        }
+//
+//        addInfoStack.isHidden = true
+//    }
+    
+//    func additionalCattleInfo() {
+////        let key = refCattle.childByAutoId().key
+//
+//
+//    }
+    
+    @IBAction func backbutton(_ sender: Any) {
+        performSegue(withIdentifier: "UnwindFromReportToHome", sender: nil)
     }
     
-    func additionalCattleInfo() {
-        let key = refCattle.childByAutoId().key
-        
-        let cattleAddInfo = ["id": key,
-                             "Fed_Hay": self.fedhay as String,
-                             "Fed_Supplement": self.fedSupplement as String,
-                             "Fed_Poloxalene": self.fedpoloxalene as String,
-                             "Fed_Ionophores": self.fedlonophores as String,
-                             "Pasture Fertilized heavily": self.pasturefed as String,
-                             "no_cattle_on_pasture": number_of_days.text
-            ] as [String : Any]
-        
-        refCattle.child(key!).setValue(cattleAddInfo)
+    // when the keyboard appears the view goesup.
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.view.frame.origin.y = -150
     }
+    
+    @IBAction func tapGesture(_ sender: UITapGestureRecognizer) {
+        self.view.frame.origin.y = 0
+        self.number_of_days.resignFirstResponder()
+        self.cattleBloated_TextField.resignFirstResponder()
+        self.cattleDead_TextField.resignFirstResponder()
+        self.cattlePasture_TextField.resignFirstResponder()
+    }
+    
 }

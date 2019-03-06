@@ -102,6 +102,11 @@ class ViewController: UIViewController {
             cattleBloatedLocations.append(CLLocationCoordinate2D(latitude: lati, longitude: loti))
         }
     }
+    
+    @IBAction func backbutton(_ sender: Any) {
+        performSegue(withIdentifier: "unwindFromBloatData", sender: nil)
+    }
+    
 }
 
 extension ViewController:MKMapViewDelegate
@@ -144,4 +149,6 @@ extension ViewController:JDHeatMapDelegate
     {
         return cattleBloatedLocations[index]
     }
+    
+    
 }

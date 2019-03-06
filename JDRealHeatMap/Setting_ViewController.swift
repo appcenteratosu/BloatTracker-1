@@ -31,10 +31,7 @@ class Setting_ViewController: UIViewController {
     }
     
     @IBAction func backButton(_ sender: Any) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Tab_Bar") as! TabBar_ViewController
-        self.navigationController?.pushViewController(nextViewController, animated: true)
+        performSegue(withIdentifier: "unwindFromSettings", sender: nil)
     }
     
     // open web page of the Data Privacy

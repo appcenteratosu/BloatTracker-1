@@ -58,15 +58,16 @@ class ManageAccountViewController: UIViewController ,UITextFieldDelegate{
             do{
                 try? Auth.auth().signOut()
                 if Auth.auth().currentUser == nil {
-//                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp") as! SignUPViewController
-//                    self.present(vc, animated: true, completion: nil)
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUp") as! SignUPViewController
+                    self.present(vc, animated: true, completion: nil)
                 }
             }
         }
     }
     
     @IBAction func back_Button(_ sender: Any) {
-        _ = navigationController?.popViewController(animated: true)
+//        _ = navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     // when the keyboard appears the view goesup.
