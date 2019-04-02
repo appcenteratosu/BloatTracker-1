@@ -32,6 +32,7 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     @IBOutlet weak var fedIonophores: UIButton!
     @IBOutlet weak var pastureFertilize: UIButton!
     @IBOutlet weak var number_of_days: UITextField!
+    @IBOutlet weak var pastureTypeButton: UIButton!
     
     var refCattle: DatabaseReference!
     let locationManager = CLLocationManager()
@@ -87,6 +88,7 @@ class Submit_ViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         pastureTypeLabel.text = pickerData[row]
+        pastureTypeButton.setTitle(pickerData[row], for: UIControlState.normal)
         blurView.isHidden = true
         pastureTypePickerView.isHidden = true
     }

@@ -653,6 +653,7 @@
                         <outlet property="mapView" destination="2QG-Cz-R81" id="rf9-ch-LU2"/>
                         <outlet property="number_of_days" destination="wsU-o1-EJU" id="Lsc-Zn-dgh"/>
                         <outlet property="pastureFertilize" destination="IFN-MR-Yc1" id="yQY-yX-Zzq"/>
+                        <outlet property="pastureTypeButton" destination="goI-tu-e7m" id="mhq-mA-l2G"/>
                         <outlet property="pastureTypeLabel" destination="poH-vf-gQ5" id="fkW-yW-VOV"/>
                         <outlet property="pastureTypePickerView" destination="Jy6-UR-Zdd" id="y27-PG-T3A"/>
                         <segue destination="CLU-C9-FL0" kind="unwind" identifier="UnwindFromReportToHome" unwindAction="unwindToHomeScreenWithSegue:" id="J9s-I4-ug2"/>
@@ -1840,7 +1841,7 @@
         <image name="BT-main-icon-white" width="48" height="103"/>
         <image name="back-button" width="13.5" height="21.5"/>
         <image name="bg-login" width="376" height="669.5"/>
-        <image name="bloat-data-big-white" width="93.5" height="79"/>
+        <image name="bloat-data-big-white" width="48" height="47.5"/>
         <image name="bloat-data-button" width="33.5" height="24"/>
         <image name="bmp-icon" width="62" height="62"/>
         <image name="bmps-button" width="26" height="25"/>
@@ -1852,7 +1853,7 @@
         <image name="home-button" width="27" height="25"/>
         <image name="menu-button" width="23.5" height="19.5"/>
         <image name="more-arrow-green" width="7" height="12.5"/>
-        <image name="report-button-big-white" width="52.5" height="50"/>
+        <image name="report-button-big-white" width="130" height="94.5"/>
         <image name="settings-icon" width="62" height="62"/>
         <image name="submit-button-report-screen.png" width="16" height="16"/>
         <image name="submit-login-button" width="282" height="44"/>
