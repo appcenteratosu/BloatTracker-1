@@ -745,7 +745,7 @@
                                     <constraint firstAttribute="width" constant="60" id="YVv-Qm-98R"/>
                                     <constraint firstAttribute="height" constant="60" id="i9v-ON-ajp"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="report-button-big-white"/>
+                                <state key="normal" backgroundImage="report-button-big"/>
                                 <connections>
                                     <segue destination="lqj-T9-EYj" kind="show" id="YEN-Jx-A5d"/>
                                 </connections>
@@ -864,7 +864,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCY-8k-m6I" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3438.75" y="-723.59154929577471"/>
+            <point key="canvasLocation" x="-3439.1999999999998" y="-723.68815592203907"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AQQ-2M-t2O">
@@ -1853,7 +1853,7 @@
         <image name="home-button" width="27" height="25"/>
         <image name="menu-button" width="23.5" height="19.5"/>
         <image name="more-arrow-green" width="7" height="12.5"/>
-        <image name="report-button-big-white" width="130" height="94.5"/>
+        <image name="report-button-big" width="52.5" height="50"/>
         <image name="settings-icon" width="62" height="62"/>
         <image name="submit-button-report-screen.png" width="16" height="16"/>
         <image name="submit-login-button" width="282" height="44"/>
@@ -1861,9 +1861,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="p3p-Eb-IhA"/>
-        <segue reference="UN7-1n-xwV"/>
+        <segue reference="BM2-lw-zv8"/>
         <segue reference="xJN-NH-xJp"/>
         <segue reference="YEN-Jx-A5d"/>
-        <segue reference="dMu-rz-cqQ"/>
+        <segue reference="8dJ-XL-zgV"/>
     </inferredMetricsTieBreakers>
 </document>
