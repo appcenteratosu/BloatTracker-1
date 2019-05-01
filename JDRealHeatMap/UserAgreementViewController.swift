@@ -22,7 +22,10 @@ class UserAgreementViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         if UserDefaults.standard.string(forKey: "EULA") == "disclaimer Shown" {
             // EULAAccept
-            performSegue(withIdentifier: "EULAAccept", sender: nil)
+            //Go to the HomeViewController if the login is sucessful
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Tab_Bar") as! TabBar_ViewController
+            self.present(nextViewController, animated: true, completion: nil)
         }
     }
     
@@ -30,7 +33,10 @@ class UserAgreementViewController: UIViewController {
         disclaimer = "disclaimer Shown"
         UserDefaults.standard.set(disclaimer, forKey: "EULA")
         UserDefaults.standard.synchronize()
-        performSegue(withIdentifier: "EULAAccept", sender: nil)
+//        performSegue(withIdentifier: "EULAAccept", sender: nil)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Tab_Bar") as! TabBar_ViewController
+        self.present(nextViewController, animated: true, completion: nil)
     }
     
     @IBAction func disAgreedButtonTapped(_ sender: UIButton) {

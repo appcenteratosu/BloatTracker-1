@@ -57,9 +57,11 @@ class SignUPViewController: UIViewController ,UITextFieldDelegate{
                 
                 if error == nil {
                     //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
-                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Tab_Bar") as! TabBar_ViewController
-                    self.navigationController?.pushViewController(nextViewController, animated: true)
+                    
+                    self.performSegue(withIdentifier: "eula", sender: nil)
+//                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "eula") as! UserAgreementViewController
+//                    self.navigationController?.pushViewController(nextViewController, animated: true)
                 }
                 else
                 {

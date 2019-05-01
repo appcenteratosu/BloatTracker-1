@@ -45,6 +45,7 @@ class ViewController: UIViewController {
 //        addRandomData()
         ref = Database.database().reference().child("details");
         addFirebaseData()
+        
         map = JDSwiftHeatMap(frame: mapsView.frame, delegate: self, maptype: .FlatDistinct)
         //map = JDSwiftHeatMap(frame: mapsView.frame, delegate: self, maptype: .FlatDistinct, BasicColors: [UIColor.yellow,UIColor.red], devideLevel: 2)
         map?.delegate = self
